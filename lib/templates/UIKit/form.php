@@ -32,20 +32,20 @@
 
 <?php if ($form->isFatal()) : ?>
 
-    <div class="uk-width-1-1">
-        <div class="uk-alert-danger form-block-message form-block-error" uk-alert>
-            <?= $form->errorMessage() ?>
-        </div>
-    </div>
+	<div id="<?= $form->id() ?>" class="uk-width-1-1">
+		<div class="uk-alert-danger form-block-message form-block-error" uk-alert>
+			<?= $form->errorMessage() ?>
+		</div>
+	</div>
 
 <?php endif ?>
 
 <?php if ($form->isSuccess()) : ?>
 
-    <div class="uk-width-1-1">
-        <div class="uk-alert-success form-block-message form-block-success" uk-alert>
-            <?= $form->successMessage() ?>
-        </div>
-    </div>
+	<div id="<?= $form->id() ?>" class="uk-width-1-1">
+		<div class="uk-alert-success form-block-message form-block-success" uk-alert>
+			<?= $form->successMessage() ?>
+		</div>
+	</div>
 
 <?php endif ?>
