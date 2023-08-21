@@ -9,11 +9,11 @@ load([
 
 use microman\Form;
 use microman\FormBlueprint;
-use Kirby\Http\Server;
+use Kirby\Http\Environment;
 
 \Kirby\Cms\App::plugin('microman/formblock', [
     'options' => [
-        'from_email' => 'no-reply@' . Server::host(),
+        'from_email' => 'no-reply@' . Environment::host(),
         'placeholders' => FormBlueprint::getPlaceholders(),
         'disable_inbox' => false,
         'disable_confirm' => false,
